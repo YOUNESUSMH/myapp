@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+.container{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 260px 1200px;
+    grid-template-rows: 645px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    height:100%;
+    max-height: 100vh;
+    background-color: aqua;
+}
+.right{
+    background-color: #f9f9f9;
+}
+.left{
+    background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sahm{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    border-radius: 10px;
+    line-height: 0px;
+    padding: 8px;
+    width: 100px;
+
+}
+.ChatGPT{
+    color: #5d5d5d;
+}
+.sahm:hover{
+    background-color: #f9f9f9;
+}
+.span1{
+    position: relative;
+    top: -21px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black;
+}
+.wasat{
+    position: relative;
+    left: 400px;
+    top: 90px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{    
+    padding-left: 20px;
+    width: 700px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+}
+input:focus{
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tahtinput{
+    
+    width: 706px;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.you{
+    position:relative;
+    right: 210px;
+    width: 710px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(235, 233, 233);
+    border: 1px solid rgb(226, 217, 217);
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+    position: relative;
+    right: 150px;
+    margin-top: 30px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 8px;
+    border: 1px solid rgb(194, 192, 192);
+}
+li a:hover{
+    background-color: aliceblue;
+}
+.icons{
+    font-size: 12px;
+    color:#5d5d5d;
+    border-radius: 20px;
+    border: 1px solid #e9e8e8;
+}
+.icons:hover{
+    background-color: #f9f9f9;
+}
+.icon{
+    position: relative;
+    top: 20px;
+    left: 150px;
+    display: inline;
+    padding: 8px;
+    border-radius: 10px;
+    color: #6d6d6d;
+}
+.icon:hover{
+   background-color: #e7e7e7;
+}
+.ico{
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+#ico2{
+    width: 220px;
+    height: 40px;
+    line-height: 25px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+#ico2:hover{
+    background-color: #e7e7e7;
+}
+#ico1{
+    width: 220px;
+    height: 40px;
+    line-height: 25px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+#ico1:hover{
+    background-color: #e7e7e7;
+}
+.divats{
+    margin-left: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 200px;
+}
+.divats:hover{
+    background-color: #e7e7e7;
+}
+.divat{
+    width: 260px;
+    height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 100px;
+}
+.bou{
+    display: block;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.bou:hover{
+    background-color:#ececec ;
+}
+.buyuk{
+    position: relative;
+    top: 100px;
+    width: 260px;
+    height: 100px;
+    background-color: #f9f9f9;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kucuk{
+    position: relative;
+    top: -18px;
+    width: 200px;
+    margin-left: 50px;
+    font-size: 12px;
 }
+#span1{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 20px;
+    left: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.YOU{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 8px;
+    width: 200px;
+    height: 20px;
+    line-height: 10px;
+    border-radius: 10px;
+}
+.YOU:hover{
+    background-color: #e7e7e7;
+}
+.ul1{
+    border: 1px solid black;
+    background-color: #ffffff;
+    width: 200px;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: -40px;
+    left: -8px;
+}
+.li1{
+    padding: 20px;
+    border-radius: 10px;
+    height: 5px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.li1:hover{
+    background-color: #e7e7e7;
+}
+
+

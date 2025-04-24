@@ -1,0 +1,282 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 450px;
+}
+li{
+    float: left;
+}
+li a:hover{
+    background-color: red;
+}
+li a,.a1{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.dropdown{
+    display: inline-block;
+}
+.drop{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.drop a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.drop a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .drop{
+    display: block;
+}
+
+.aonwan{
+   z-index: -1; 
+   background-color: black;
+   position: relative;
+   top: -51px;
+   height: 400px;
+   color: white;
+
+}
+.you{
+   animation-name: younes;
+   animation-duration: 4s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes younes {
+   from {opacity: 0;}
+   to {opacity: 1;}     
+}
+.you{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+}
+.whoami{
+    position: relative;
+    bottom: 70px;
+    background-color: white;
+    color: black;
+    height: 200px;
+}
+.p1{
+   position: relative;
+   left: 350px; 
+   top: 60px;      
+}
+.p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 620px; 
+    top: 50px;  
+}
+.gallery{
+    position: relative;
+    bottom: 90px;
+    background-color: #f5f5f5;
+    height: 400px;
+}
+.image{
+    position: relative;
+    left: 200px;
+    display: flex;
+    gap: 20px;
+}
+.image1{
+    width:300px;
+    height:300px;
+    overflow: hidden;
+    border-radius:20px;
+    box-shadow:5px 0 5px black;
+    transition: transform 0.3s ease-in-out;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    top: -305px;
+    opacity: 0;
+}
+.image1:hover .img1{
+    opacity: 0;
+}
+.image1:hover .img2{
+    opacity: 1;   
+}
+.image1:hover{
+    transform: scale(1.1);
+
+}
+.inputname{
+    margin-top: -100px;
+    overflow: hidden;
+    padding-left: 620px;
+    height: 600px;
+    background-color: #f5f5f5;
+}
+.p3{
+    position: relative;
+    top: -15px;
+    left: -40px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form1{
+    position: relative;
+    top: 30px;
+    
+}
+input{
+    position: relative;
+    right: 220px;
+    width: 500px;
+    height: 30px;
+    margin-top: 5px;
+}
+.input2{
+    margin-top: 20px;
+}
+.input3{
+    margin-top: 20px;
+}
+.submit{
+   margin-top: 40px; 
+   margin-left: 210px;
+   width: 80px;
+}
+.nachr{
+    position: relative;
+    top: 100px;
+    right:620px;
+    width: 1400px;
+    height: 120px;
+    color: white;
+    background-color: black;
+}
+.a1:hover{
+    background-color: red;
+}
+.todo{
+    border: 2px solid white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 350px;
+    height: 410px;
+    background-color: #f5f5f5;
+    position: relative;
+    top: -435px;
+    right: 620px;
+}
+.todo::-webkit-scrollbar, .todo1::-webkit-scrollbar {
+    width: 8px;  /* عرض شريط التمرير */
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    padding: 20px;
+}
+.item:hover{
+   background-color: #acacac;
+}
+.todo1{
+    border: 2px solid white;
+    width: 350px;
+    height: 410px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    position: relative;
+    bottom: 850px;
+    left: 380px;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    padding: 20px;
+}
+.item1:hover{
+    background-color: #acacac;
+}
+.fixed-title{
+    color: black;
+    position: sticky;
+    left: 130px;
+    top: 0;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 4px;
+    z-index: 1;
+}
+.error-msg {
+    position: relative;
+    right: 95px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.plusinput{
+    position: relative;
+    left: 0;
+}
+.submit{
+    position: relative;
+    left: -230px;
+    background-color: rgb(255, 176, 29);
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+    width: 100px;
+    height: 40px;
+    line-height: 5px;
+    transition: transform 0.3s ease;
+}  
+.submit:hover{
+    background-color: rgba(255, 166, 0, 0.418);
+    transform: scale(1.2);
+
+}
+
+
+
