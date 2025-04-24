@@ -284,6 +284,11 @@ input{
       padding: 10px;
       margin: 0;
     }
+    .navbar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;   
+    }
   
     .container {
       width: 100%;
