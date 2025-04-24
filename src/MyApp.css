@@ -278,25 +278,27 @@ input{
 
 }
 /* للهواتف */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     body {
-        width: 200px;
-        font-size: 16px; /* تقليل حجم الخط */
+      font-size: 16px;
+      padding: 10px;
+      margin: 0;
     }
-
+  
     .container {
-        padding: 10px; /* تقليل الحشوة داخل العناصر */
+      width: 100%;
+      padding: 10px;
     }
-
+  
     .header {
-        font-size: 20px; /* تصغير حجم الخط في العنوان */
+      font-size: 20px;
     }
-}
-
-/* للأجهزة اللوحية */
-@media (max-width: 1024px) {
+  }
+  
+  /* للأجهزة اللوحية */
+  @media (max-width: 1024px) {
     .container {
-        width: 90%; /* تحديد العرض بنسبة */
+      width: 90%;
     }
-}
-
+  }
+  
