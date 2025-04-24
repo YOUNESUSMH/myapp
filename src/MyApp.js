@@ -197,7 +197,7 @@ const handeditindex1 = (e,index)=>{
    <>
 
    <ul className="navbar">
-    <li><a href='#'>Home2025</a></li>
+    <li><a href='#'>Home</a></li>
     <li><a href='#'>adrress</a></li>
     <li><a href='#p3'>information</a></li>
     <li className='dropdown'>
